@@ -4,14 +4,15 @@
 //3.EventListener on click add classlist to li (for crossing word)
 //4.EventListener on click pen img, remove all items 
 
-const input = document.querySelector('#input');
+const input = document.querySelector('input');
 const list = document.querySelector('#items');
 
 function newElement() {
   let newLi = document.createElement('li');
-  let newItem = input.elements.itemInput.value;  
+  let newItem = input.value;  
   newLi.append(newItem);
-console.log(newItem)
+  list.append(newLi);
+  console.log(newItem);
 }
 
 input.addEventListener('keydown', function(event) {
