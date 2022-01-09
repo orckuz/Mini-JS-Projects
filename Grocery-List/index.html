@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Grocery List</title>
   </head>
   <body>
-    <header>
-      <h1 id="title">Grocery List</h1>
-    </header>
-    <section id="input-cnt">
-      <figure id="pen-img"></figure>
-      <div id="input">
-        <input type="text" name="itemInput"> 
-      </div>
-      <div id="line"></div>
-    </section>
-    <section id="list">
-      <ul id="items">
-        <li>Sample</li>
-      </ul>
-    </section>
-    <script src="app.js"></script>
+    <main id="container">
+      <header id="title-cont">
+        <h1 id="title">Grocery List</h1>
+      </header>
+      <section id="input-cont">
+        <div id="input">
+          <input type="text" name="itemInput" />
+        </div>
+        <div id="line"></div>
+      </section>
+      <section id="list">
+        <ul id="items"></ul>
+      </section>
+      <figure id="img"></figure>
+      <script src="app.js"></script>
+    </main>
   </body>
 </html>

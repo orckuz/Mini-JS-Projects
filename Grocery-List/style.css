@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  font-family: "The Nautigal", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: orange;
+}
+
+#container {
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#title-cont {
+  /* position: absolute;
+  top: 0; */
+  margin-bottom: 3rem;
+}
+
+#title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 0.1rem solid black;
+  font-family: "The Nautigal", cursive;
+  font-size: 2.2rem;
+}
+#items {
+  margin-top: 1rem;
+  font-size: 2rem;
+  list-style: none;
+  position: relative;
+  right: 160px;
+}
+
+#img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 3%;
+  cursor: pointer;
+  background: center/cover url(trash.png);
+}
