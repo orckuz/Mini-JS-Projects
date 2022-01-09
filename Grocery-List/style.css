@@ -50,8 +50,8 @@ input[type="text"] {
   margin-top: 1rem;
   font-size: 2rem;
   list-style: none;
-  position: relative;
-  right: 160px;
+  position: absolute;
+  left: 200px;
 }
 
 #img {
