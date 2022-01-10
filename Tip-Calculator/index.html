@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div id="card">
+      <header id="title">
+        <h1>Tip Calculator</h1>
+      </header>
+      <section id="bill-cont">
+        <label for="bill">Bill Amount</label>
+        <input type="number" name="bill" id="bill" />
+      </section>
+      <section id="guest-cont">
+        <label for="guest-num">Number of Colados</label>
+        <input type="number" name="guests" id="guest-num" />
+      </section>
+      <section id="service-cont">
+        <label for="percentage">Service Quality</label>
+        <select name="service" id="percentage">
+          <option value="choose">Choose</option>
+          <option value="belleza">30% - Belleza</option>
+          <option value="positron">20% - Postitron</option>
+          <option value="chato">15% - Chato</option>
+          <option value="normal">10% - Normal</option>
+          <option value="deaverga">5% - De av</option>
+        </select>
+      </section>
+      <section id="btn-cont">
+        <button id="btn">Calculate</button>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
