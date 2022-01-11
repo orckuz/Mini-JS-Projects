@@ -5,35 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div id="card">
-      <header id="title">
-        <h1>Tip Calculator</h1>
-      </header>
-      <section id="bill-cont">
-        <label for="bill"><button><span>&dollar;</span></button>Bill Amount</label>
-        <input type="number" name="bill" id="bill" />
-      </section>
-      <section id="guest-cont">
-        <label for="guest-num"><button><span>&#9863;</span></button>Number of Colados</label>
-        <input type="number" name="guests" id="guest-num" />
-      </section>
-      <section id="service-cont">
-        <label for="percentage">Service Quality</label>
-        <select name="service" id="percentage">
-          <option value="choose">Choose</option>
-          <option value="30">30% - Belleza</option>
-          <option value="20">20% - Postitron</option>
-          <option value="15">15% - Chato</option>
-          <option value="10">10% - Normal</option>
-          <option value="5">5% - De av</option>
-        </select>
-      </section>
-      <section id="btn-cont">
-        <button id="btn">Calculate</button>
-      </section>
+    <div id="container">
+      <div id="card">
+        <header id="title">
+          <h1>Tip Calculator</h1>
+          <p id="line"></p>
+        </header>
+        <section id="bill-cont">
+          <label for="bill">Bill Amount</label>
+          <button id="dollar">
+            <i class="fas fa-dollar-sign"></i>
+          </button>
+          <input type="number" name="bill" id="bill" />
+        </section>
+        <section id="guest-cont">
+          <label for="guest-num">Number of Colados</label>
+          <button id="person"><i class="fas fa-male"></i></button>
+          <input type="number" name="guests" id="guest-num" />
+        </section>
+        <section id="service-cont">
+          <label for="percentage">Service Quality</label>
+          <select name="service" id="percentage">
+            <option value="choose">Choose</option>
+            <option value="30">30% - Belleza</option>
+            <option value="20">20% - Postitron</option>
+            <option value="15">15% - Chato</option>
+            <option value="10">10% - Normal</option>
+            <option value="5">5% - De av</option>
+          </select>
+        </section>
+        <p id="line"></p>
+        <section id="btn-cont">
+          <button id="btn">Calculate</button>
+        </section>
+        <div id="tip-amnt" class></div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
