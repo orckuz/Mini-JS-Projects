@@ -14,14 +14,38 @@
       </header>
       <h2>Add a new note:</h2>
       <section id="noteInptCont">
-        <label for="note">Note: </label>
-        <textarea name="noteText" id="note" cols="30" rows="10"></textarea>
+        <label for="noteInpt">Note: </label>
+        <textarea name="noteText" id="noteInpt" cols="30" rows="10"></textarea>
       </section>
       <section id="btnCont">
         <button id="addBtn">Add Note</button>
       </section>
-      <section id="noteCardCont"></section>
+      <section class="noteContainer">
+        <div class="note">
+          <p class="noteBody">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            quaerat enim facere reprehenderit delectus placeat rerum minus odio
+            sed expedita, commodi unde dolorum quibusdam totam, illum amet
+            molestiae exercitationem ex!
+          </p>
+          <div class="noteButtons">
+            <button class="noteBtn viewBtn">View Details</button>
+            <button class="noteBtn deleteBtn">Delete</button>
+          </div>
+        </div>
+      </section>
+      <div class="modalCont">
+        <div class="modalCard">
+          <button class="closeBtn">&times;</button>
+          <p class="modalDetails">
+            Lorem ipsum sdfsdfsdfdsfdolor sit amet consectetur adipisicing elit.
+            Sint et repellat modi similique asperiores dolorum perferendis
+            optio, placeat nam rem natus consectetur neque delectus labore
+            quaerat harum nemo doloribus. Enim.
+          </p>
+        </div>
+      </div>
     </main>
-    <script src="app.js"></script>
+    <script src="app2.js"></script>
   </body>
 </html>
