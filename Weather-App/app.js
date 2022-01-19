@@ -31,19 +31,19 @@ function displayResults(weather) {
   const currentLocation = document.querySelector("#current-location");
   currentLocation.innerHTML = `${weather.name} , ${weather.sys.country}`;
   const temp = document.querySelector("#temperature");
-  temp.innerHTML = `${Math.floor(weather.main.temp - 273.15)}<span>°c</span>`;
+  temp.innerHTML = `${Math.round(weather.main.temp - 273.15)}<span>°c</span>`;
   const forecast = document.querySelector("#forecast");
   forecast.innerHTML = weather.weather[0].main;
   const realFeel = document.querySelector("#real-feel");
-  realFeel.innerHTML = `${weather.main.temp_min - 273.15}°c / ${
-    weather.main.temp_max - 273.15
-  }°c`;
+  realFeel.innerHTML = `${Math.round(
+    weather.main.temp_min - 273.15
+  )}°c / ${Math.round(weather.main.temp_max - 273.15)}°c`;
   let currDate = new Date();
   const currentDate = document.querySelector("#current-date");
   currentDate.innerHTML = getDate(currDate);
 }
 
-// Get current date
+// Function: Get current date
 function getDate(d) {
   let months = [
     "January",
