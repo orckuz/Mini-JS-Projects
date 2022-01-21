@@ -51,6 +51,7 @@ body {
   font-size: 1.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: transform 0.2s; /* Animation */
 }
 
 /* Modal Styling */
@@ -78,7 +79,7 @@ body {
   display: inline-block;
   width: 20%;
   max-width: 100%;
-  min-height: 50%;
+  min-height: 40%;
   max-height: 70%;
   padding: 2rem;
 }
