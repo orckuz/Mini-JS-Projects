@@ -1,0 +1,50 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #82d2e4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+.timer {
+  color: white;
+  text-align: center;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+.timer {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-container {
+  width: 1000px;
+  height: 600px;
+  margin-top: 3rem;
+}
+
+.cards-container img {
+  height: 100px;
+  width: 100px;
+}
+
+.memory-card {
+  display: inline-block;
+}
+
+.active {
+}

@@ -9,7 +9,7 @@ const list = document.querySelector("#list");
 const listItems = document.querySelector("#items");
 const remove = document.querySelector("#img");
 
-//Function that adds the input element to an <li>
+//Function: add the input element to an <li>
 function newElement() {
   //variable that creates a new <li>
   let newLi = document.createElement("li");
