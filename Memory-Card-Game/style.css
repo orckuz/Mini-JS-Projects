@@ -32,27 +32,54 @@ header {
 }
 
 .cards-container {
-  width: 1000px;
-  height: 600px;
+  width: 640px;
+  height: 640px;
   margin-top: 3rem;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
 }
 
-.cards-container img {
-  height: 100px;
-  width: 100px;
-}
-
+/* CARD POSTION ON TOP OF ONE ANOTHER */
 .memory-card {
-  display: inline-block;
   cursor: pointer;
+  position: relative;
+  height: 50%;
+  width: 33%;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+/* SCALE CARD WHEN CLICK*/
+.memory-card:active{
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+#front-face,
+#back-face {
+  position: absolute;
+  padding: 1.1rem;
+  height: 70%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+#front-face{
+  transform: rotateY(180deg);
 }
 
 /* HIDE CARD  */
-.card {
+.memory-card.active {
   display: none;
 }
 
-.card.active {
+.memory-card.active {
   display: inline-block;
+  transform: rotateY(180deg);
+}
+
+.greyed-out {
+  background-color: rgba(0, 0, 0, 0.7);
 }
